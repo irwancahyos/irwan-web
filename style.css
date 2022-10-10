@@ -1,0 +1,290 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* website kopi */
+
+body {
+    width: 100%;
+    background-color: rgb(62, 70, 50);
+}
+
+.container {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(img/bak.png.jpg);
+    margin: auto;
+    width: 100%;
+    border: 0px solid black;
+    padding: 5px;
+}
+
+.header {
+    width: 900px;
+    border: 0px solid black;
+    margin: auto;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.menu {
+    width: 1150px;
+    border: 0px solid black;  
+    margin: auto; 
+    margin-top: 10px;
+    margin-bottom: 5px;
+    
+}
+
+h1 {
+    color: white;
+    font-family: arial;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+.menu .username {
+    padding: 5px;
+    }
+
+
+.menu .username form  {
+    margin: 5px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 50px;
+    text-align: center;
+}
+.menu .contain ul li {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+
+.menu .contain ul {
+    border: 0px solid black;
+}
+
+.menu a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu li:hover a {
+    background-color: #383838;
+    color: white;
+    box-shadow: 0 0 1px 1px lightcyan;
+    border-radius: 1px;
+}
+
+.badan {
+    width: 1175px;
+    margin: auto;
+    padding: 5px;
+    border: 0px solid black;
+}
+
+.kiri h1,p {
+    display: none;
+}
+
+.tengah h1,p {
+    display: none;
+}
+.sidebar h1,p {
+    display: none;
+}
+.badan .kiri {
+    width: 350px;
+    height: 500px;
+    border: 0px solid black;
+    float: left;
+    padding: 5px;
+    box-sizing: border-box;
+    background-image: url(img/kopi\ konten.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center left;
+    border-radius: 10px;
+    position: relative;
+
+}
+
+.badan .tengah {
+    margin-left: 58px;
+    width: 350px;
+    height: 500px;
+    border: 0px solid black;
+    float: left;
+    padding: 5px;
+    box-sizing: border-box;
+    background-image: url(img/arabica.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center left;
+    border-radius: 10px;
+}
+
+.badan .sidebar {
+    padding: 5px;
+    width: 350px;
+    height: 500px;
+    border: 0px solid black;
+    float: right;
+    box-sizing: border-box;
+    background-image: url(img/alat\ .jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center left;
+    border-radius: 10px;
+}
+
+/* bagian hover */
+.kiri:hover {
+    background-image: none;
+    cursor: pointer;
+    background-color: #3838389a;
+    box-shadow: 0 0 1px 2px lightcyan;
+}
+
+
+.sidebar:hover {
+    background-image: none;
+    cursor: pointer;
+    background-color: #3838389a;
+    box-shadow: 0 0 1px 2px lightcyan;
+}
+
+.tengah:hover {
+    background-image: none;
+    cursor: pointer;
+    background-color: #3838389a;
+    box-shadow: 0 0 1px 2px lightcyan;
+}
+/* memunculkan tulisan  */
+
+.badan .kiri:hover h1  {
+    display: block;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-align: center;
+    margin-top: 175px;
+}
+
+.badan .kiri:hover p  {
+    display: block;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center ;
+    line-height:100%;
+    color: white;
+}
+
+.badan .tengah:hover h1  {
+    display: block;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-align: center;
+    margin-top: 175px;
+}
+
+.badan .tengah:hover p  {
+    display: block;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center ;
+    line-height:100%;
+    color: white;
+}
+
+.badan .sidebar:hover h1  {
+    display: block;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-align: center;
+    margin-top: 175px;
+}
+
+.badan .sidebar:hover p  {
+    display: block;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center ;
+    line-height:100%;
+    color: white;
+    margin-top: 6px;
+}
+
+
+
+
+
+
+
+/* reset */
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+
+.cf {
+    *zoom: 1;
+}
